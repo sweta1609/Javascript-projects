@@ -1,0 +1,100 @@
+body{
+    background-color: rgb(197, 238, 254);
+}
+
+#outer_box{
+    margin-top:4%;
+    margin-left: 40%;
+}
+h2{
+    font-family:Brush Script MT;
+    font-weight:70;
+    margin-left: 100px;
+    color:rgb(185, 157, 3);
+}
+
+
+h5{
+    font-family: sans-serif;
+    font-weight: 50;
+}
+
+.inner_box{
+    height:35px;
+    width:350px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 3px 3px 0px 0px;
+    box-shadow:2px 2px 2px rgb(161, 160, 160);
+}
+
+.inner_box_1{
+    margin-top: -12px;
+}
+
+/* button */
+.inner_box_2{
+    margin-right:5px;
+    margin-top:7px;
+    background: transparent;
+    border-color: transparent;
+    cursor: pointer;
+}
+
+.inner_box_2:hover{
+    transform:rotate(90deg);
+}
+
+
+/* changing color of button */
+.inner_box_2 i{
+    color:rgb(185, 157, 3);
+}
+
+
+.question{
+    padding: 1rem 1rem 0 1rem;
+    margin-bottom:-2rem;
+}
+
+/* HIDDEN ELEMENTS */
+/*it consist of text which should appear on clicking upon plus icon btn  */
+.appearing_box{
+    padding: 1rem 0 1.5rem 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    width:350px;
+    background-color: white;
+    border-radius:0px 0px 3px 3px;
+    box-shadow:2px 2px 2px rgb(161, 160, 160);
+}
+
+.appearing_box p{
+    margin-bottom: 0;
+
+}
+.appearing_box{
+    visibility: hidden;
+} 
+/* once clicked on plus icon ,text message should appear */
+.open_modal .appearing_box{
+    display:block;
+    visibility: visible;
+  
+}
+
+/* once clicked on plus icon ,minus icon should appear */
+.open_modal .minus_icon{
+    display:inline;
+}
+
+/* once clicked on plus icon ,plus icon should disappear */
+.open_modal .plus_icon{
+    display:none;
+}
+
+
+/* on main page before clicking on plus icon it shld remain plus so removed minus icon */
+.minus_icon{
+    display:none;
+}

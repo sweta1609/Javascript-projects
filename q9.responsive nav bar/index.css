@@ -1,0 +1,110 @@
+navbar{
+    display:flex;
+    justify-content: space-between;
+    height:80px;
+   
+}
+
+.nav-menu li a{
+    text-decoration: none;
+}
+
+
+
+ul{
+    display: flex;
+    width:300px;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+li{
+    list-style-type: none;
+}
+
+#icons{
+    margin-top: 30px;
+    margin-right:10px;
+}
+
+
+.normal-color{
+    color:rgb(5, 205, 205)
+}
+
+#bars{
+    display:none;
+}
+
+#list-of-elements{
+    display:none;
+}
+
+
+
+@media screen and (max-width:768px){
+    /* 1.made icons disappear which were not required in 768px */
+    /* 2.made postion absolute of nav menu,adjusted height,width,bg color */
+    /* 3.did display flex and positioned nav -menu in column direction */
+    /* 4.beacuse it need to slide in so did transform:translateX(100%) */
+    /* 5.need to hide this overflow in x axis bcz nav-menu needs go slide in do did body oveflow-x hidden */
+    /* 6.now i need that it eneters smotthly so added transition */
+    #icons{
+        display:none;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    .nav-menu{
+        position:absolute;
+        right:0px;
+        height:50vh;
+        width:20%;
+        top:12vh;
+        background-color: rgb(162, 250, 250);
+        display:flex;
+        flex-direction:column ;
+        justify-content: center;
+        align-items:center;
+        transform:translateX(100%);
+        transition:transform 0.5s ease-in
+
+    }
+    /* i want the menu inside nav shld appear slowly so dissappeared it first  */
+    .nav-menu li{
+        opacity:0;
+        
+    }
+
+    .nav-menu li a{
+        text-decoration: none;
+    }
+
+    #bars{
+        display:block;
+        margin-top: 30px;
+        margin-right: 40px;
+        cursor: pointer;
+    }
+    
+
+    /* craeted a class so tht it goes only till 0% of x axis */
+    .nav-active{
+        transform:translateX(0%);
+    }
+  
+
+}
+
+/* created this keyframe to make all nav-links appear slowly  */
+@keyframes navLinkFade{
+    from{
+        opacity:0;
+        transform:translateX(50px);
+
+    }to{
+        opacity:1;
+        transform:translateX(0px);
+
+    }
+}

@@ -1,0 +1,112 @@
+body{
+    background-color:rgb(156, 157, 158);
+    
+}
+
+
+.title{
+    margin-left:45%;
+
+}
+
+.font-Style h2{
+    margin-top:20px;
+}
+.underline{
+    width: 7rem;
+    height: 0.25rem;
+    background-color:goldenrod;
+    margin-top:-15px;
+}
+
+.btn-container{
+    height:50px;
+    width:600px;
+    /* background-color: aqua; */
+    margin-left: 25%;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    display:flex;
+    justify-content: space-around;
+}
+
+
+.section-center{
+    margin-top:5%;
+    width: 90vw;
+    height:90%;
+    /* margin: 0 auto; */
+    max-width: 1170px;
+    display: flex;
+    justify-content:space-between;
+    gap: 3rem 2rem;
+    justify-items: center;
+    /* background-color: brown; */
+    
+
+}
+
+
+
+.menu-item{
+    height:280px;
+    width:200px;
+    background-color: antiquewhite;
+    border-radius: 5px;
+    position:inherit;
+    
+}
+
+.head{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* common classes */
+
+.font-Style{
+   font-family: sans-serif;
+}
+
+img{
+    border-radius: 3px;
+}
+
+
+/* designing buttons */
+
+.button{
+    height:40px;
+    width:80px;
+    box-shadow:2px 2px 2px 2px lightblue;
+    background-color: lightgrey;
+    border-radius: 5px;
+    border:0;
+
+}
+
+#button-container{
+    margin-left: 47%;
+    height:30px;
+    width:150px;
+    /* background-color: brown; */
+    margin-top:-15%;
+
+}
+
+#prev-btn{
+    background-color: rgb(251, 192, 192);
+    border:0;
+    border-radius: 5px;
+    width:60px;
+    box-shadow:2px 2px 1px 1px grey;
+    
+}
+
+#next-btn{
+    background-color: rgb(251, 192, 192);
+    border:0;
+    border-radius: 5px;
+    width:60px;
+    box-shadow:2px 2px 1px 1px grey;
+}

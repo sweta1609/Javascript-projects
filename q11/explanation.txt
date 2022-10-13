@@ -1,0 +1,43 @@
+1st Method
+Traversing dom
+
+>three articles are present 
+>every article consist of buttons
+  + for adding textbox
+  - for subtracting textbox
+>then we are going to itterate on buttons
+>we will create a click function for each button
+>inside click function we will get parent element of button that is div class and then parent element of div class that is article
+>we will assign this parent class to some variable
+>we will use classlist toggle here beacuse it will check if textbox is added it will remove that textbox and if textbox is not added it will ad that textbox
+>so when we click on btn it adds textbox to each parent article 
+
+
+
+2nd Method
+// USING SELECTORS INSIDE METHOD
+
+a)without the functionality in which when we click on button on different article the textbox of other article closes itself
+
+>three articles present
+>picking the articles using queryseelctoall
+>itterating on each article using variable item
+>getting buttons of each article(item)
+>add click function to each button
+>now adding textbox to each article whenever any button is clicked
+
+
+b)with the functionality in which when we click on button on different article the textbox of other article closes itself
+
+>three articles present
+>picking the articles using queryseelctoall
+>itterating on each article using variable item
+>getting buttons of each article(item)
+>add click function to each button
+>now inside click functions itterated on each article again using variable items
+>created a check 
+>if when click on any button if items of tht button matches article we will have to remove textbox from taht article
+
+
+
+

@@ -1,0 +1,22 @@
+    1st part(initial setup)
+    
+    1.create an array
+    2.parent for all article is section-center(so we will start by targetting the section center)
+    3.we have dom content loader so when our page loads we want to do something
+    4.in displayMenu variable stored menu array so that we can itterate on all items of menu array (here item represents all items in array)
+
+    5.grap whole article portion from html and paste it inside displaymenu in return
+    6.join them in one string beacuse we want to place them in sectionCenter
+        displayMenu = displayMenu.join()
+    
+    7.we will add the string as data
+
+    summary(above)
+    created array of items
+    then picked up the portion where we need to display item using a variable
+    craeted a dom content load which will load all items once browser is reloaded
+    craeted new array for every item using map
+    joined all arrays as string in displaymenu
+    then showed these items in section center using innerhtml
+
+

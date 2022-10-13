@@ -1,0 +1,12 @@
+#box{
+    height:100px;
+    width:100px;
+    background-color: red;
+}
+#box1{
+    background-color: blue;
+    height:50px;
+    width:50px;
+    /* padding: 10px; */
+    margin:10px 5px 5px 5px;
+}

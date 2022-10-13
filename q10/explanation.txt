@@ -1,0 +1,10 @@
+1.FACED ISSUE IN PLACING  THE OVERLAY DIV
+- created a over lay div and in css hidden its visisbility
+
+2.WHEN CLICK ON BUTTON WHERE TO PUT THE OVER LAY DIV
+- a)created an open div class in css and gave it visisbility
+
+3.JS work
+-a)created variables for all div and button which are to be used
+b)when click on  button it in open-modal it added modalOverlay whcih consist of modalConatiner
+c)when clicked on delete button it deleted modalOverlay from open-modal
